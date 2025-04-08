@@ -1,4 +1,9 @@
-1. Harris Corner Detection
+🟦I have performed three different feature detection algorithms:
+1)Harris Corner Detection 
+2)Shi-Tomasi Corner Detection
+3)Blob Detection 
+
+🟦1. Harris Corner Detection
 Purpose: Detects corners in an image — points where the intensity changes sharply in multiple directions.
 
 How it works:
@@ -42,3 +47,20 @@ Analyzes connected pixels based on thresholds.
 Filters blobs by area, circularity, convexity, etc.
 
 Used in: Medical imaging, shape detection.
+
+🟦 Key Differences:
+Aspect	Harris	Shi-Tomasi	Blob Detection
+Detects	Corners	Strong Corners	Regions/Blobs
+Based On	Gradient matrix	Eigenvalue filtering	Shape & intensity
+Shape Sensitivity	Corners only	Corners only	Circular & irregular
+Accuracy	Medium	High	Depends on filters
+Usage Example	Edge matching	Motion tracking	Object counting
+
+🟦Conclusion:
+Harris, Shi-Tomasi, and Blob Detection are all used to detect important features in images but serve different purposes:
+
+Harris detects corners based on intensity changes — good for identifying sharp features.
+
+Shi-Tomasi improves upon Harris by selecting only the strongest and most reliable corners.
+
+Blob Detection finds circular or irregular regions — useful for detecting objects without corners.
